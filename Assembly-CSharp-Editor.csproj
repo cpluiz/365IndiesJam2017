@@ -53,7 +53,7 @@
   <ItemGroup>
      <Compile Include="Assets\Editor\EnumFlagDrawer.cs" />
  <Reference Include="Facebook.Unity.Settings">
- <HintPath>D:/UnityProjects/365IndiesJam2017/Library/FacebookSDK/Facebook.Unity.Settings.dll</HintPath>
+ <HintPath>D:/UnityProjects/365IndiesJam2017/365IndiesJam2017/Library/FacebookSDK/Facebook.Unity.Settings.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.Advertisements">
  <HintPath>C:/Program Files/Unity 2017/Editor/Data/UnityExtensions/Unity/Advertisements/Editor/UnityEditor.Advertisements.dll</HintPath>

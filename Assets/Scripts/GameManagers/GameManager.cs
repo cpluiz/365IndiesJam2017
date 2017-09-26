@@ -63,3 +63,24 @@ public class GameManager : MonoBehaviour {
 	}
 
 }
+
+public static class POGTranslator{
+	public static string POGTranslate(Organs organ){
+		switch (organ) {
+		case Organs.heart:
+			return "coração";
+		case Organs.intestine:
+			return "intestino";
+		case Organs.kidneys:
+			return "rins";
+		case Organs.liver:
+			return "fígado";
+		case Organs.lungs:
+			return "pulmões";
+		case Organs.pancreas:
+			return "pâncreas";
+		default:
+			return "Deu ruim e caiu e um órgão que ainda não existe na lista";
+		}
+	}
+}

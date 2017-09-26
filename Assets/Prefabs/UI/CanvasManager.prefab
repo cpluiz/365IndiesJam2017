@@ -619,11 +619,12 @@ MonoBehaviour:
   deathTitle: "Voc\xEA morreu no meio do percurso"
   goalDescription: "A pesar de todas as dificuldades voc\xEA conseguiu chegar ao centro
     de transplantes m\xE9dicos carregando os \xF3rg\xE3os do paciente.\n\nO paciente
-    precisava de um <organ>\n\nSua porcentagem de viabilidade \xE9 de <percentage>%"
+    precisava de um transplante de <organ>\n\nSua porcentagem de viabilidade \xE9
+    de <percentage>%"
   deathDescription: "Gra\xE7as a sua demora para chegar ao centro de transplantes
     os m\xE9dicos foram a sua procura e encontraram o seu corpo rec\xE9m falecido
-    no meio do caminho.\n\nO paciente necessitava de um <organ>\n\nSua porcentagem
-    de viabidilidade \xE9 de <percentage>%"
+    no meio do caminho.\n\nO paciente necessitava de um transplante de <organ>\n\nSua
+    porcentagem de viabidilidade \xE9 de <percentage>%"
   conclusionText:
   - "Parab\xE9ns, sua morte foi \xFAtil!"
   - Que pena, o paciente voltou para a fila de espera

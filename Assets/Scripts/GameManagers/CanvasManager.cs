@@ -72,7 +72,9 @@ public class CanvasManager : MonoBehaviour {
 			endConclusionText.text = conclusionText [0];
 		else
 			endConclusionText.text = conclusionText [1];
-		endDescriptionText.text = endDescriptionText.text.Replace (organSufix, GameManager.instance.targetOrgan.ToString ()).Replace (percentageSufix, viability.ToString ());
+		endDescriptionText.text = 	endDescriptionText.text
+									.Replace (organSufix, POGTranslator.POGTranslate(GameManager.instance.targetOrgan))
+									.Replace (percentageSufix, viability.ToString ());
 	}
 
 	public void SetMainCamera(Camera camera){
