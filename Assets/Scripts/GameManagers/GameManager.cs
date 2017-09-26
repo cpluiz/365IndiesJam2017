@@ -62,6 +62,10 @@ public class GameManager : MonoBehaviour {
 		return V;
 	}
 
+	public void LoadLevel(int id){
+		SceneManager.LoadScene (id);
+	}
+
 }
 
 public static class POGTranslator{

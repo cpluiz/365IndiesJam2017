@@ -10,6 +10,7 @@ public class Player : MonoBehaviour {
 	public float speed = 1;
 	[Range(1.2f,3)]
 	public float runMultiplyer = 1.2f;
+	bool isDead;
 
 	[Header("Stamina Configuration")]
 	[Range(10, 100)]
@@ -61,10 +62,13 @@ public class Player : MonoBehaviour {
 		}
 		PrepareOrgans ();
 		stamina = maxStamina;
+		isDead = false;
 	}
 	
 	// Update is called once per frame
 	void Update () {
+		if (isDead)
+			return;
 		if(Input.GetButton("Run"))
 			transform.Translate (Vector2.right * Input.GetAxis ("Horizontal") * speed * runMultiplyer * Time.deltaTime);
 		else
@@ -79,6 +83,8 @@ public class Player : MonoBehaviour {
 	}
 
 	void FixedUpdate(){
+		if (isDead)
+			return;
 		isGrounded = Physics2D.OverlapCircle (groundChecker.position, groundCheckerRadius, jumpableMask);
 		if (rb.velocity.y < 0) {
 			rb.velocity += Vector2.up * Physics2D.gravity.y * (fallMultiplyer-1f) * Time.deltaTime;
@@ -128,6 +134,7 @@ public class Player : MonoBehaviour {
 	}
 
 	private void KillPlayer(bool goalReached = false){
+		isDead = true;
 		GameManager.instance.ShowFinalPanel (goalReached);
 	}
 

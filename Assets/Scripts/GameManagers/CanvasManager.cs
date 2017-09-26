@@ -96,4 +96,12 @@ public class CanvasManager : MonoBehaviour {
 		}
 	}
 
+	public void MudarCena(int id){
+		GameManager.instance.LoadLevel (id);
+	}
+
+	public void Sair(){
+		Application.Quit ();
+	}
+
 }
