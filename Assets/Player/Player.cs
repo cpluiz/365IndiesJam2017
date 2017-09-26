@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour {
 
@@ -64,6 +65,8 @@ public class Player : MonoBehaviour {
 		stamina = maxStamina;
 		isDead = false;
 	}
+	void OnLoadScene(Scene scene, LoadSceneMode sceneMode){
+	}
 	
 	// Update is called once per frame
 	void Update () {
@@ -117,7 +120,7 @@ public class Player : MonoBehaviour {
 	}
 
 	//Organ functions
-	private void PrepareOrgans(){
+	public void PrepareOrgans(){
 		foreach (Organ organ in organs.Values) {
 			maxHealth += organMaxHealth;
 			organ.PrepareOrgan ();

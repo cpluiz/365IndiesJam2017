@@ -38,9 +38,14 @@ public class CanvasManager : MonoBehaviour {
 	Dictionary<Organs,Text> organTexts = null;
 
 	void PrepareCanvas(){
-		if (organTexts != null)
-			return;
-		organTexts = new Dictionary<Organs, Text> ();
+		if (organTexts != null){
+			foreach(Text text in organTexts.Values){
+				Destroy (text.gameObject);
+			}
+			organTexts.Clear ();
+		}else{
+			organTexts = new Dictionary<Organs, Text> ();
+		}
 		canvas = GetComponentInChildren<Canvas> ();
 	}
 
