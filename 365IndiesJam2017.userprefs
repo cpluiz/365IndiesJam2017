@@ -1,0 +1,19 @@
+﻿<Properties StartupItem="Assembly-CSharp.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\GameManagers\CanvasManager.cs">
+    <Files>
+      <File FileName="Assets\Player\Organ.cs" Line="13" Column="38" />
+      <File FileName="Assets\Player\Player.cs" Line="121" Column="29" />
+      <File FileName="Assets\Scripts\Obstacles\FlipEffector.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Obstacles\Chain.cs" Line="25" Column="45" />
+      <File FileName="Assets\Scripts\GameManagers\CanvasManager.cs" Line="75" Column="3" />
+      <File FileName="Assets\Scripts\Obstacles\Obstacle.cs" Line="17" Column="57" />
+      <File FileName="Assets\Scripts\Obstacles\MovingBall.cs" Line="18" Column="123" />
+      <File FileName="Assets\Scripts\GameManagers\GameManager.cs" Line="54" Column="57" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
