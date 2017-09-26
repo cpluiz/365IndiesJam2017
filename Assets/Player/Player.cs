@@ -156,6 +156,12 @@ public class Player : MonoBehaviour {
 			return false;
 		}
 	}
+
+	void OnTriggerEnter2D(Collider2D other){
+		if(other.CompareTag("Goal")){
+			KillPlayer (true);
+		}
+	}
 }
 
 [Flags]

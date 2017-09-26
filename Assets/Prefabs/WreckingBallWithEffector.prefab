@@ -272,7 +272,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08de885400b30ce4aa1113b59a09463d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dammage: 7
+  dammage: 15
   organToDammage: -1
 --- !u!114 &114760312282540760
 MonoBehaviour:

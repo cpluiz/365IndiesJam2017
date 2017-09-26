@@ -79,7 +79,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dammage: 3
-  organToDammage: 33
+  organToDammage: 51
 --- !u!212 &212887516958018856
 SpriteRenderer:
   m_ObjectHideFlags: 1
