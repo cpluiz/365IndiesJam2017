@@ -52,7 +52,7 @@ GameObject:
   - component: {fileID: 4410217751287550}
   - component: {fileID: 212257315697946002}
   m_Layer: 0
-  m_Name: New Sprite
+  m_Name: PlayerGraphics
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -180,7 +180,7 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
-  m_Size: {x: 0.5, y: 1.6}
+  m_Size: {x: 0.71, y: 1.42}
   m_Direction: 0
 --- !u!114 &114691666807653176
 MonoBehaviour:
@@ -209,7 +209,6 @@ MonoBehaviour:
   maxStamina: 50
   staminaConsuptionSpeed: 10
   staminaRecoverySpeed: 5
-  lungDammageOnLowStamina: 1
   jumpSpeed: 350
   fallMultiplyer: 2.5
   lowJumpMultiplyer: 2
@@ -218,7 +217,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 768
   groundCheckerRadius: 0.1
-  organMaxHealth: 100
+  organMaxHealth: 30
   defaultViability: 60
   lungDammagers:
     serializedVersion: 2
@@ -226,6 +225,8 @@ MonoBehaviour:
   lungRange: 0.35
   lungDefaultDammage: 0.5
   lungTrigger: {fileID: 4285232426059024}
+  lungDammageOnLowStamina: 1
+  lungDammageOnUnderwater: 5
 --- !u!212 &212257315697946002
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -258,7 +259,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 5a67f0848936d7e4fa360c32124df213, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 0805e2a77d0810a4aa792d0ca1ed55a4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
